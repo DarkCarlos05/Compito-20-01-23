@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+ 
+#output{
+    top: 50px;
+    height: 200px;
+    width: 200px;
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#red{
+    background-color: red;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#white{
+    background-color: white;
+}

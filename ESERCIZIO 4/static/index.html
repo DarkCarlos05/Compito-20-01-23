@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<div>
+	NON FUNZIONA NIENTE
+</div>
+
+
+
+	<div>
+		Inserisci un numero
+		<input id="myInput" name="numero" value="" type="text"size="20" maxlength="200" />
+	</div>
+
+	<button>
+		SUBMIT
+	</button>
+
+
+	<script type="text/javascript">
+
+		let input = document.getElementById("myInput");
+		
+		input.addEventListener("keypress", function(event) {
+
+			if (event.key == "Enter") {
+    			event.preventDefault();
+
+				n = document.getElementById("myInput").value
+				var div = 1;
+ 				var conta=0;
+	
+ 				while(conta <= 1 && div <= n/2) {
+   					if(n % div == 0)  {
+						conta++;	
+   					}	
+   					div++;
+ 				}
+	
+ 				if (conta == 1){
+   					alert("Il numero è primo")
+ 				}   else {
+    				alert("Il numero non è primo");
+					}
+			}
+		});
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

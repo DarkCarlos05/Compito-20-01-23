@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	 
+	<button id="yellow">
+		giallo
+	</button>
+
+	<button id="green">
+		verde
+	</button>
+
+	<button id="blue">
+		blu
+	</button>
+
+	<button id="red">
+		rosso
+	</button>
+
+	<button id="white">
+		reset
+	</button>
+
+	<div>
+		Inserire colore
+		<input id="myInput" name="colore" value="" type="text"size="20" maxlength="200" />
+	</div>
+
+	<div id="output">
+		
+	</div>
+
+
+	<script type="text/javascript">
+		
+		let input = document.getElementById("myInput");
+
+		let ot = document.querySelector("#output")
+		let green = document.querySelector("#green")
+		let yellow = document.querySelector("#yellow")
+		let blue = document.querySelector("#blue")
+		let red = document.querySelector("#red")
+		let white = document.querySelector("#white")
+				
+
+		function color(colore){
+			document.getElementById("output").style.backgroundColor = colore;
+		}
+
+		green.addEventListener("click",function(event) {
+			event.preventDefault()
+			color(event.currentTarget.id)
+		})
+
+		yellow.addEventListener("click",function(event) {
+			event.preventDefault()
+			color(event.currentTarget.id)
+		})
+
+		blue.addEventListener("click",function(event) {
+			event.preventDefault()
+			color(event.currentTarget.id)
+		})
+
+		red.addEventListener("click",function(event) {
+			event.preventDefault()
+			color(event.currentTarget.id)
+		})
+
+		white.addEventListener("click",function(event) {
+			event.preventDefault()
+			color(event.currentTarget.id)
+		})
+
+		input.addEventListener("keypress", function(event) {
+    		
+    		colore = document.getElementById("myInput").value
+    		color(colore)
+		});
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
